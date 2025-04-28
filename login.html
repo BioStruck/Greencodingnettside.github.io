@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Code - Logg inn</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Tilpasset CSS for login-siden */
+        .login-container {
+            max-width: 400px;
+            margin: 5rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            color: #2E8B57;
+            text-align: center;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login-form button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Green<span>Code</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="login.html">Logg inn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2>Logg inn</h2>
+            <form class="login-form" id="loginForm">
+                <input type="email" placeholder="E-post" required>
+                <input type="password" placeholder="Passord" required>
+                <button type="submit">Logg inn</button>
+            </form>
+            <p style="text-align: center; margin-top: 1rem;">
+                <a href="#" style="color: #2E8B57;">Glemt passord?</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GreenCode</p>
+    </footer>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Innlogging simulert! (Dette ville i en ekte nettside sendt data til en server.)");
+            window.location.href = "index.html"; // Omdiriger til hovedsiden
+        });
+        
+    </script>
+</body>
+</html>
