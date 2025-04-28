@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Code - Bærekraftig teknologi for fremtiden</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header med navigasjon -->
     <header id="top">
         <div class="navbar">
             <a href="#" class="logo" id="logo-link">
-                <span class="leaf-icon"></span>
+                <span class="leaf-icon">🌱</span>
                 <span>Green Code</span>
             </a>
             
             <ul class="nav-links">
-                <li><a href="#top">Hjem</a></li>
+                <li><a href="index.html">Hjem</a></li>
                 <li><a href="#about">Om oss</a></li>
                 <li><a href="#services">Tjenester</a></li>
+                <li><a href="#resources">Ressurser</a></li>
+                <li><a href="#cases">Kasusstudier</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Kontakt oss</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+              <!--  <li><a href="login.html">Logg inn</a></li>   -->
             </ul>
             
             <div class="nav-actions">
@@ -29,7 +32,7 @@
                     <i class="fas fa-search search-icon"></i>
                     <input type="text" class="search-input" placeholder="Søk...">
                 </div>
-                <button class="btn btn-outline">Sign up / Logg inn</button>
+                <button class="btn btn-outline"><li><a href="login.html">Logg inn</a></li></button>
             </div>
         </div>
     </header>
@@ -52,13 +55,12 @@
         
         <div class="about-content">
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Green Code team">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Green Code team" loading="lazy">
             </div>
             <div class="about-text">
                 <h3>Vår reise mot bærekraft</h3>
                 <p>Green Code ble grunnlagt i 2018 med en visjon om å kombinere teknologi og bærekraft. Vårt team av eksperter jobber utrettelig for å utvikle løsninger som reduserer miljøpåvirkning.</p>
                 <p>Vi tror på at teknologi skal være en kraft for god utvikling, og vår misjon er å skape digitale løsninger som bidrar til FN's bærekraftsmål.</p>
-                <p>Med hovedkontor i Oslo har vi ekspandert til å ha team over hele Norge, alle deler den samme lidenskapen for miljø og innovasjon.</p>
                 <button class="btn btn-primary">Les mer om vårt arbeid</button>
             </div>
         </div>
@@ -95,67 +97,98 @@
                     <i class="fas fa-chart-line"></i>
                 </div>
                 <h3>Energianalyse</h3>
-                <p>Detaljerte analyser av din digitale klimapåvirkning og forbedringspotensiale</p>
+                <p>Detaljerte analyser av din digitale klimapåvirkning</p>
                 <a href="#" class="btn btn-outline">Les mer</a>
             </div>
         </div>
     </section>
 
-    <!-- Funksjoner -->
-    <section class="features">
+    <!-- Educational Resources -->
+    <section id="resources" class="resources">
         <div class="section-title">
-            <h2>Våre fordeler</h2>
-            <p>Hvorfor velge Green Code for dine digitale løsninger</p>
+            <h2>Læringsressurser</h2>
+            <p>Utforsk bærekraftig utvikling</p>
         </div>
-        
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <h3>Miljøvennlig</h3>
-                <p>Alle våre løsninger er designet for minimal klimapåvirkning</p>
+        <div class="blog-grid">
+            <article class="blog-post">
+                <h3>Energieffektive Algoritmer</h3>
+                <p>Lær hvordan du reduserer CPU-forbruk med optimaliserte sorteringsmetoder. Våre tester viser opptil 70% energibesparelser.</p>
+                <a href="#" class="btn btn-outline">Les guide</a>
+            </article>
+            <article class="blog-post">
+                <h3>Bærekraftig Webdesign</h3>
+                <p>Oppdag hvordan lette assets og lazy loading kan redusere datatrafikk med 50%.</p>
+                <a href="#" class="btn btn-outline">Les artikkel</a>
+            </article>
+            <article class="blog-post">
+                <h3>Grønne Rammerverk</h3>
+                <p>Sammenligning av energibruk mellom React, Vue og Vanilla JS.</p>
+                <a href="#" class="btn btn-outline">Se resultater</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Toolkit Section -->
+    <section id="toolkit" class="toolkit">
+        <div class="section-title">
+            <h2>Utviklerverktøy</h2>
+            <p>Mål og reduser din kodes miljøpåvirkning</p>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <h3>Web Carbon Calculator</h3>
+                <p>Analyser nettstedets utslipp med Green Web Foundation.</p>
+                <a href="https://www.thegreenwebfoundation.org/" target="_blank" class="btn btn-outline">Bruk verktøy</a>
             </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <h3>Energieffektiv</h3>
-                <p>Optimal ytelse med minimal energi bruk</p>
+            <div class="tool-card">
+                <h3>CodeCarbon</h3>
+                <p>Spor CO₂-utslipp fra din Python/Java-kode.</p>
+                <a href="https://codecarbon.io/" target="_blank" class="btn btn-outline">Integrer nå</a>
             </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <h3>Kvalitetssikret</h3>
-                <p>Alle våre løsninger gjennomgår streng kvalitetstesting</p>
+            <div class="tool-card">
+                <h3>Ecograder</h3>
+                <p>Få detaljerte forbedringsforslag for din nettside.</p>
+                <a href="https://ecograder.com/" target="_blank" class="btn btn-outline">Test nettsted</a>
             </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="cases" class="case-studies">
+        <div class="section-title">
+            <h2>Kasusstudier</h2>
+            <p>Reell virkning av grønn koding</p>
+        </div>
+        <div class="case-study">
+            <h3>Nordisk E-handel: 65% energireduksjon</h3>
+            <p>Gjennom optimalisering av deres React-applikasjon og migrering til vårt grønne hosting, reduserte vi deres årlige energiforbruk fra 12,000 kWh til 4,200 kWh.</p>
+            <ul>
+                <li>✅ 40% raskere sidelasting</li>
+                <li>✅ 65% lavere energibruk</li>
+                <li>✅ 3.2-tonns årlig CO₂-reduksjon</li>
+            </ul>
+            <button class="btn btn-primary">Last ned full rapport (PDF)</button>
         </div>
     </section>
 
     <!-- FAQ -->
     <section id="faq" class="faq">
         <div class="section-title">
-            <h2>Ofte stilte spørsmål</h2>
-            <p>Svar på vanlige spørsmål om våre tjenester</p>
+            <h2>FAQ</h2>
+            <p>Tekniske spørsmål og svar</p>
         </div>
-        
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>Hvordan måler dere klimapåvirkning?</h3>
-                <p>Vi bruker avanserte verktøy for å beregne CO2-utslipp knyttet til digital infrastruktur og optimaliserer deretter for reduksjon.</p>
+        <div class="faq-grid">
+            <div class="faq-card">
+                <h3>Hvordan måler dere nettsiders karbonavtrykk?</h3>
+                <p>Vi bruker <strong>CO2.js</strong> kombinert med energidata fra strømnett. Formel: <code>Dataoverføring (MB) × Energiintensitet (kWh/MB) × Karbonfaktor (gCO2/kWh)</code>.</p>
             </div>
-            
-            <div class="feature-card">
-                <h3>Er virkelig grønn hosting mulig?</h3>
-                <p>Ja, våre servere drives utelukkende av fornybar energi, og vi kompenserer for all infrastruktur-relatert klimapåvirkning.</p>
+            <div class="faq-card">
+                <h3>Er React eller Vue mer energieffektivt?</h3>
+                <p>Våre tester viser at Vue typisk bruker 15-20% mindre CPU enn React for tilsvarende SPAs.</p>
             </div>
-            
-            <div class="feature-card">
-                <h3>Koster grønn teknologi mer?</h3>
-                <p>Ikke nødvendigvis. Våre løsninger er ofte mer kostnadseffektive på lang sikt grunnet redusert energibruk.</p>
+            <div class="faq-card">
+                <h3>Hvilke databasesystemer er mest energieffektive?</h3>
+                <p>SQLite og PostgreSQL scorer best i våre tester for små til middels datamengder.</p>
             </div>
         </div>
     </section>
@@ -167,20 +200,20 @@
             <p>Ta gjerne kontakt for en uforpliktende samtale</p>
         </div>
         
-        <div class="features-grid">
-            <div class="feature-card">
+        <div class="contact-grid">
+            <div class="contact-card">
                 <h3>Kontaktinformasjon</h3>
                 <p><i class="fas fa-map-marker-alt"></i> Grønnegate 123, 0550 Oslo</p>
                 <p><i class="fas fa-phone"></i> +47 123 45 678</p>
                 <p><i class="fas fa-envelope"></i> post@greencode.no</p>
             </div>
             
-            <div class="feature-card">
+            <div class="contact-card">
                 <h3>Kontaktskjema</h3>
                 <form>
-                    <input type="text" placeholder="Ditt navn" class="search-input" style="width: 100%; margin-bottom: 1rem;">
-                    <input type="email" placeholder="Din e-post" class="search-input" style="width: 100%; margin-bottom: 1rem;">
-                    <textarea placeholder="Din melding" class="search-input" style="width: 100%; margin-bottom: 1rem; height: 100px;"></textarea>
+                    <input type="text" placeholder="Ditt navn" class="form-input">
+                    <input type="email" placeholder="Din e-post" class="form-input">
+                    <textarea placeholder="Din melding" class="form-input" rows="4"></textarea>
                     <button type="submit" class="btn btn-primary">Send melding</button>
                 </form>
             </div>
@@ -202,13 +235,12 @@
             </div>
             
             <div class="footer-column">
-                <h3>Lenker</h3>
+                <h3>Hurtiglenker</h3>
                 <ul class="footer-links">
                     <li><a href="#top">Hjem</a></li>
-                    <li><a href="#about">Tjenester</a></li>
-                    <li><a href="#services">Om oss</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#services">Tjenester</a></li>
+                    <li><a href="#resources">Ressurser</a></li>
+                    <li><a href="#cases">Kasusstudier</a></li>
                 </ul>
             </div>
             
@@ -218,27 +250,46 @@
                     <li><a href="#">Grønn Webutvikling</a></li>
                     <li><a href="#">Bærekraftig Cloud</a></li>
                     <li><a href="#">Energioptimalisering</a></li>
-                    <li><a href="#">Rådgivning</a></li>
                 </ul>
             </div>
             
             <div class="footer-column">
                 <h3>Nyhetsbrev</h3>
-                <p>Meld deg på vårt nyhetsbrev for siste nytt om bærekraftig teknologi</p>
+                <p>Meld deg på for siste nytt om bærekraftig teknologi</p>
                 <form>
-                    <input type="email" placeholder="Din e-post" class="search-input" style="width: 100%; margin-bottom: 1rem;">
+                    <input type="email" placeholder="Din e-post" class="newsletter-input">
                     <button type="submit" class="btn btn-primary">Meld meg på</button>
                 </form>
             </div>
         </div>
         
         <div class="copyright">
-            <p>&copy; 2023 Green Code. Alle rettigheter reservert.</p>
+            <p>&copy; 2023 Green Code. Alle rettigheter reservert. | <a href="#">Personvern</a> | <a href="#">Vilkår</a></p>
         </div>
     </footer>
 
     <script>
-        // Enkel JavaScript for søkefunksjonalitet
+        // Enhanced JavaScript
+        // Smooth scrolling with offset for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Search functionality
         document.querySelector('.search-input').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 alert('Søker etter: ' + this.value);
@@ -246,31 +297,36 @@
             }
         });
 
-        // Logg inn knapp funksjonalitet
-        document.querySelector('.btn-outline').addEventListener('click', function() {
-            alert('Innloggingsvindu vil vises her');
-        });
-
-        // Bli med oss knapp funksjonalitet
-        document.querySelector('.btn-primary').addEventListener('click', function() {
-            alert('Registreringsskjema vil vises her');
-        });
-
-        // Glatt scrolling for alle lenker med hash
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        window.scrollTo({
-                            top: target.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
+        // Button interactions
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (this.textContent.includes('Bli med')) {
+                    window.location.href = '#contact';
                 }
             });
+        });
+
+        // Lazy load images
+        document.addEventListener('DOMContentLoaded', function() {
+            const lazyImages = [].slice.call(document.querySelectorAll('img[loading="lazy"]'));
+            
+            if ('IntersectionObserver' in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            }
         });
     </script>
 </body>
 </html>
+
